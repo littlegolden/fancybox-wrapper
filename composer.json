@@ -1,0 +1,45 @@
+{
+    "name": "phenomlab/fancybox",
+    "description": "Enables all images to be presented in Fancybox",
+    "type": "flarum-extension",
+    "keywords": ["images", "fancybox"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Mark Cutting",
+            "homepage": "https://phenomlab.com",
+            "role": "Creator"
+        }
+    ],
+    "support": {
+        "issues": "https://github.com/phenomlab/fancybox/issues",
+        "source": "https://github.com/phenomlab/fancybox",
+        "forum": "https://discuss.flarum.org"
+    },
+    "homepage": "https://paypal.me",
+    "funding": [
+        {
+            "type": "website",
+            "url": "/phenomlab"
+        }
+    ],
+    "require": {
+        "flarum/core": "^0.1.0-beta.15"
+    },
+    "autoload": {
+        "psr-4": {
+            "Phenomlan\\Fancybox\\": "src/"
+        }
+    },
+    "extra": {
+        "flarum-extension": {
+            "title": "Fancybox",
+            "category": "feature",
+            "icon": {
+                "name": "fas fa-images",
+                "backgroundColor": "#666",
+                "color": "#ffffff"
+            }
+        }
+    }
+}
