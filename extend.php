@@ -27,7 +27,13 @@ return [
     this.$('img').not('.emoji').not(".Avatar").each(function ()
   {
    var currentImage = $(this);
+   var checksrc = currentImage.attr("data-src");
+if(checksrc) {
+     $(this).wrap("<a data-fancybox='gallery' href='" + currentImage.attr("data-src") + "' </a>");
+	 }
+else {
      $(this).wrap("<a data-fancybox='gallery' href='" + currentImage.attr("src") + "' </a>");
+}
   });
 });
 </script>
