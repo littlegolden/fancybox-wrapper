@@ -1,5 +1,5 @@
 {
-    "name": "phenomlab/fancybox",
+    "name": "phenomlab/fancybox-wrapper",
     "description": "Enables all images to be presented in Fancybox",
     "type": "flarum-extension",
     "keywords": ["images", "fancybox"],
