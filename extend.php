@@ -28,11 +28,14 @@ return [
    var currentImage = $(this);
    var checksrc = currentImage.attr("data-src");
 if(checksrc) {
-     $(this).wrap("<a data-fancybox='gallery' href='" + currentImage.attr("data-src") + "' </a>");
+     $(this).wrap("<a class=\"fancybox\" href='" + currentImage.attr("data-src") + "'></a>");
 	 }
 else {
-     $(this).wrap("<a data-fancybox='gallery' href='" + currentImage.attr("src") + "' </a>");
+     $(this).wrap("<a class=\"fancybox\" href='" + currentImage.attr("src") + "'></a>");
 }
+$().fancybox({
+    selector : '.fancybox'
+});
   });
 });
 </script>
