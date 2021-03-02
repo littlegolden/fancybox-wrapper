@@ -23,7 +23,7 @@ return [
  flarum.core.compat.extend.extend(flarum.core.compat['components/CommentPost'].prototype, 'oncreate', function(output, vnode) {
   const self = this;
 
-    $('body img').not('.emoji').not(".Avatar").not($(".PostMeta-ip a img")).each(function ()
+    this.$('img').not('.emoji').not(".Avatar").not($(".PostMeta-ip img")).each(function ()
   {
    var currentImage = $(this);
    var checksrc = currentImage.attr("data-src");
