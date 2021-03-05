@@ -32,10 +32,15 @@ flarum.core.compat.extend.extend(flarum.core.compat['components/CommentPost'].pr
         else {
             $(this).wrap("<a class=\"fancybox\" href='" + currentImage.attr("src") + "'></a>");
         }
-        if ( $(this).parent().hasClass('fancybox') ) {
-            $().fancybox({
-                selector: '.fancybox'
-            });
+        try {
+            $().ready(function(){
+                $().fancybox({
+                    selector: '.fancybox'
+                });
+            })
+        } catch (e) {
+            console.error(e.name);
+            console.error(e.message);
         }
     });
 });
